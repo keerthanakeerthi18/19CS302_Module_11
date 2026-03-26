@@ -1,61 +1,52 @@
-## print all the letters of the English alphabet.
-
-SAMPLE OUTPUT : CAPS and add space to each alphabet
-
-A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-
-# EX 54 C program to reverse a string.
-## DATE: 
+# EX 55 C program to find a square of number using function with arguments without return type.
+## DATE:
 ## AIM:
-To write a C program to reverse a string.
+To write a C program to find a square of number using function with arguments without return type.
 
 ## Algorithm
-1.Use a loop to iterate over the ASCII values of uppercase English letters (from 'A' to 'Z').
+1.Define a function square() that takes an integer as an argument.
 
-2.Start from the ASCII value of 'A' (65) and loop until the ASCII value of 'Z' (90).
+2.Inside the function, calculate the square of the number by multiplying it by itself.
 
-3.In each iteration, print the current letter followed by a space.
+3.Print the square of the number inside the function.
 
-4.Print a newline after printing all the letters.
+4.Call the square() function from main(), passing the number as an argument.
 
-5.Ensure that each letter is separated by a space.
+5.Ensure that there is no return value (void return type).
+
+ 
 
 ## Program:
 ```
 /*
-C program to reverse a string.
+C program to find a square of number using function with arguments without return type.
 Developed by: KEERTHANA P
-RegisterNumber:  212222060119
+RegisterNumber: 212222060119
 */
 #include <stdio.h>
 
+void square(int num)
+{
+    printf("Square of %d is %d\n", num, num * num);
+}
+
 int main()
 {
-    for(char ch = 'A'; ch <= 'Z'; ch++)
-    {
-        printf("%c ", ch);
-    }
-    printf("\n");
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    square(num);
 
     return 0;
 }
-
-
-
 ```
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/a2a8d2f2-1655-435f-8484-c7cac4924033)
+![image](https://github.com/user-attachments/assets/54a9d34b-4d75-4a6f-9d7e-8f20fefa6e9d)
 
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
-
-
-
-
-
-
-
-
